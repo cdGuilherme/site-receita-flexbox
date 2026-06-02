@@ -1,0 +1,110 @@
+@import url("./cssReset.css");
+@import url("./variaveis.css");
+@import url("./fontes.css");
+@import url("./componentes.css");
+
+/* Definições gerais */
+/* ----------------- */
+
+body {
+    color: var(--preto);
+}
+
+main {
+    min-height: 100vh;
+}
+
+
+
+/* Conteúdo */
+/* -------- */
+
+p,
+a,
+li {
+    color: var(--cinzaEscuro);
+}
+
+ul {
+    padding-left: var(--tamPadding);
+}
+
+
+
+/* Header */
+/* ------ */
+
+.header {
+    width: 100%;
+    background-color: var(--corPrincipal);
+}
+
+.header__titulo {
+    color: var(--branco);
+}
+
+.header__nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: var(--tamGap);
+    padding: calc(var(--tamPadding) / 2);
+    flex: 1;
+}
+
+.header__nav-item {
+    background-color: var(--corPrincipalClara);
+    color: var(--branco);
+    text-decoration: none;
+    padding: calc(var(--tamPadding) / 2) var(--tamPadding);
+    border-radius: var(--borderRadius);
+}
+
+
+
+/* Footer */
+/* ------ */
+
+.footer {
+    width: 100%;
+    padding: var(--tamPadding);
+    background-color: var(--preto);
+}
+
+.footer__paragrafo {
+    color: var(--cinzaClaro);
+}
+
+.footer__nav-item {
+    display: block;
+    color: var(--cinza);
+    text-decoration: none;
+}
+
+
+
+/* Bootstrap */
+/* --------- */
+
+.card {
+    width: 100%;
+    max-width: 20rem;
+}
+
+.card-img-top {
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+}
+
+
+
+/* Tablets e maiores */
+@media (min-width: 767.02px) {
+    .header__container {
+        display: flex;
+    }
+
+    .header__nav {
+        justify-content: right;
+    }
+}

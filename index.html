@@ -1,74 +1,146 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
-	<meta charset="UTF-8">
-	<title>Receita</title>
-	<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Site de Receitas | Flexbox</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <!-- Style da página -->
+  <link rel="stylesheet" href="./css/style.css">
 </head>
-<body>
 
-	<header>
-		<h1>Site de Receitas</h1>
-		<nav>
-			<a href="#doces">Receitas doces</a>
-			<a href="#salgadas">Receitas salgadas</a>
-		</nav>
-	</header>
+<body class="parent-flex-center">
 
-	<main>
-		<section id="doces">
-		<h2>Doces</h2>
-				<article>
-					<h3>Lava cake</h3>
-					<img src="./img/lava-cake.jpg" alt="Imagem Receita X">
+  <!-- Header -->
+  <!-- ------ -->
 
-					<h4>Ingredientes</h4>
-					<ul>
-						<li>100g de chocolate amargo</li>
-						<li>100g de manteiga</li>
-						<li>Cacau em pó</li>
-						<li>100g de açúcar</li>
-					</ul>
-				</article>
-				<article>				
-					<h3>Cookie de chocolate</h3>
-					<img src="./img/cookie-chocolate.jpg" alt="Imagem Receita X">
-					<h4>Ingredientes</h4>
-					<ul>
-						<li>2 xícaras de farinha de trigo</li>
-						<li>3/4 xícara de açúcar mascavo</li>
-						<li>3/4 xícara de açúcar cristal</li>
-						<li>2 ovos</li>
-					</ul>
-				</article>
-		</section>
-		<section id="salgadas">
-		<h2>Salgadas</h2>
-				<article>
-					<h3>Pizza</h3>
-					<img src="./img/pizza.jpg" alt="Imagem Receita X">
-					<h4>Ingredientes</h4>
-					<ul>
-						<li>1kg de farinha de trigo</li>
-						<li>30g de fermento biológico</li>
-						<li>3 xícaras de água morna</li>
-						<li>3/4 xícaras de óleo</li>
-					</ul>
-				</article>
-				<article>
-					<h3>Hambúrguer caseiro</h3>
-					<img src="./img/hamburguer.jpg" alt="Imagem Receita X">
-					<h4>Ingredientes</h4>
-					<ul>
-						<li>1 kg de carne moída</li>
-						<li>1 sachê de creme de cebola</li>
-						<li>1 cebola media picada</li>
-						<li>4 dentes de alho picado</li>
-					</ul>
-				</article>
-		</section>
-		
-	</main>
+  <header id="inicio" class="header parent-flex-center">
+    <div class="container header__container">
+      <h1 class="header__titulo texto-centralizado">Site de Receitas</h1>
+      <nav class="header__nav">
+        <a class="header__nav-item texto-centralizado" href="#doces">Receitas doces</a>
+        <a class="header__nav-item texto-centralizado" href="#salgadas">Receitas salgadas</a>
+      </nav>
+    </div>
+  </header>
+
+
+
+  <!-- Conteúdo -->
+  <!-- -------- -->
+
+  <main class="container">
+    <br>
+    <section id="doces">
+      <h2 class="texto-centralizado">Doces</h2>
+
+      <div class="container-cards">
+
+        <!-- Card Lava cake -->
+        <article class="card box-shadow">
+          <img class="card-img-top" src="./img/lava-cake.jpg" alt="Lava cake">
+          <div class="card-body">
+            <h3 class="card-title">Lava cake</h3>
+            <h4 class="card-text">Ingredientes</h4>
+            <ul>
+              <li>100g de chocolate amargo</li>
+              <li>100g de manteiga</li>
+              <li>Cacau em pó</li>
+              <li>100g de açúcar</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Card Cookie de chocolate -->
+        <article class="card box-shadow">
+          <img class="card-img-top" src="./img/cookie-chocolate.jpg" alt="Cookie de chocolate">
+          <div class="card-body">
+            <h3 class="card-title">Cookie de chocolate</h3>
+            <h4 class="card-text">Ingredientes</h4>
+            <ul>
+              <li>2 xícaras de farinha de trigo</li>
+              <li>3/4 xícara de açúcar mascavo</li>
+              <li>3/4 xícara de açúcar cristal</li>
+              <li>2 ovos</li>
+            </ul>
+          </div>
+        </article>
+
+      </div>
+      <br>
+    </section>
+
+    <section id="salgadas">
+      <h2 class="texto-centralizado">Salgadas</h2>
+
+      <div class="container-cards">
+
+        <!-- Card pizza -->
+        <article class="card box-shadow">
+          <img class="card-img-top" src="./img/pizza.jpg" alt="Pizza">
+          <div class="card-body">
+            <h3 class="card-title">Pizza</h3>
+            <h4 class="card-text">Ingredientes</h4>
+            <ul>
+              <li>1kg de farinha de trigo</li>
+              <li>30g de fermento biológico</li>
+              <li>3 xícaras de água morna</li>
+              <li>3/4 xícaras de óleo</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Card Hambúrguer caseiro -->
+        <article class="card box-shadow">
+          <img class="card-img-top" src="./img/hamburguer.jpg" alt="Hambúrguer caseiro">
+          <div class="card-body">
+            <h3 class="card-title">Hambúrguer caseiro</h3>
+            <h4 class="card-text">Ingredientes</h4>
+            <ul>
+              <li>1 kg de carne moída</li>
+              <li>1 sachê de creme de cebola</li>
+              <li>1 cebola media picada</li>
+              <li>4 dentes de alho picado</li>
+            </ul>
+          </div>
+        </article>
+
+      </div>
+      <br>
+    </section>
+
+  </main>
+
+
+
+  <!-- Footer -->
+  <!-- ------ -->
+
+  <footer class="footer">
+    <div class="container">
+      <h4 class="footer__paragrafo">Site de Receitas | Flexbox</h4>
+      <br>
+      <nav class="footer__nav">
+        <a class="footer__nav-item" href="#inicio">Início</a>
+        <a class="footer__nav-item" href="#doces">Doces</a>
+        <a class="footer__nav-item" href="#salgadas">Salgadas</a>
+      </nav>
+    </div>
+  </footer>
+
+
+
+  <!-- Bootstrap JS -->
+  <!-- ------------ -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
 
 </body>
+
 </html>

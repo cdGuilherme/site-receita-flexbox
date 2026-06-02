@@ -1,0 +1,26 @@
+:root {
+    /* Variáveis de cores */
+    /* ------------------ */
+
+    /* Cores principais */
+    --corPrincipal:         #FF6900;
+    --corPrincipalClara:    #FFA213;
+
+    /* Neutras */
+    --preto:                #1E2939;
+    --cinzaEscuro:          #4A5565;
+    --cinza:                #99A1AF;
+    --cinzaClaro:           #E9F0FF;
+    --branco:               #FFFFFF;
+
+
+    
+    /* Variáveis de layout */
+    /* ------------------- */
+
+    --tamMaxContainer: 64rem;
+    --tamPadding: 1rem;
+    --tamMargin: 1rem;
+    --tamGap: 1rem;
+    --borderRadius: 0.5rem;
+}
